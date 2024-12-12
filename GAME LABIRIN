@@ -21,7 +21,7 @@ void labirin(int posisi_x_pemain, int posisi_y_pemain){
         for (int x = 0; x < WIDTH; x++){
             if (x == posisi_x_pemain && y == posisi_y_pemain){
             	attron(COLOR_PAIR(2));
-                mvprintw(y, x, "p");
+                mvprintw(y, x, ">>");
             attroff(COLOR_PAIR(2));
 			}else if (maze[y][x] == 1){
 				attron(COLOR_PAIR(1));
